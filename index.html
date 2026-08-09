@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Delos Coffee House — cafetería de especialidad junto al río en Tigre, Buenos Aires. Café de origen único, pastelería artesanal y un espacio para trabajar o desconectar." />
+    <meta name="keywords" content="cafetería en Tigre, café de especialidad, Delos Coffee House, cafetería frente al río, café de origen único Tigre" />
+    <title>Delos Coffee House | Cafetería de especialidad en Tigre</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body id="top">
+
+    <!-- ============================================================
+    HEADER / NAVBAR (Bootstrap)
+    ============================================================ -->
+    <header class="site-header--overlay">
+        <nav class="navbar navbar-expand-lg custom-navbar custom-navbar--overlay" aria-label="Navegación principal">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/delos-coffee-logo-white-transparent.png" alt="Delos Coffee House" class="brand-logo" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mt-3 mt-lg-0 ms-lg-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Inicio</a></li>
+                    <li class="nav-item"><a href="pages/nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="pages/menu.html" class="nav-link">Menú</a></li>
+                    <li class="nav-item"><a href="pages/galeria.html" class="nav-link">Galería</a></li>
+                    <li class="nav-item"><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================================
+    CONTENIDO PRINCIPAL
+    ============================================================ -->
+    <main>
+
+        <!-- PRESENTACIÓN / HERO -->
+        <section class="hero" aria-labelledby="titulo-presentacion">
+            <figure class="hero-media">
+                <img class="hero-img" src="assets/hero-mujer-ventana-delos-coffee.png" alt="Mujer tomando un café junto a la ventana de Delos Coffee House, con luz cálida de la tarde y la calle arbolada de fondo" height="900" />
+            </figure>
+
+            <div class="hero-content">
+                <img src="assets/delos-coffee-logo-white-transparent.png" alt="Delos Coffee House" class="hero-logo" />
+                <h1 id="titulo-presentacion" class="hero-title animate__animated animate__fadeInLeft" style="--animate-duration: 0.9s;">Café de especialidad<br />junto al río</h1>
+                <p class="hero-sub animate__animated animate__fadeInRight" style="--animate-duration: 0.9s; animation-delay: .25s;">Un rincón para bajar el ritmo y disfrutar de un buen café en el corazón de Tigre.</p>
+                <div class="hero-actions animate__animated animate__fadeInUp" style="--animate-duration: 0.9s; animation-delay: .45s;">
+                    <a href="pages/menu.html" class="btn btn-primary">Ver la carta</a>
+                    <a href="pages/contacto.html" class="btn btn-ghost">Cómo llegar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="perks" aria-label="Beneficios de visitar Delos Coffee House">
+            <div class="perks-grid">
+                <div class="perk" data-aos="fade-up">
+                    <span class="perk-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="12" rx="1.5" />
+                            <path d="M2 19h20" />
+                            <path d="M9 19l1-3h4l1 3" />
+                        </svg>
+                    </span>
+                    <div class="perk-copy">
+                        <h3 class="perk-title">Workspace</h3>
+                        <p class="perk-text">Wifi rápido y buena luz para tu día de trabajo remoto.</p>
+                    </div>
+                </div>
+
+                <div class="perk" data-aos="fade-up" data-aos-delay="100">
+                    <span class="perk-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="7.5" cy="8" r="1.6" />
+                            <circle cx="12" cy="6.5" r="1.6" />
+                            <circle cx="16.5" cy="8" r="1.6" />
+                            <circle cx="19" cy="12" r="1.6" />
+                            <path d="M12 22c-3 0-5.5-1.8-5.5-4.4 0-2.1 1.7-3.1 2.8-4.4 1-1.2 1.4-2.4 2.7-2.4s1.7 1.2 2.7 2.4c1.1 1.3 2.8 2.3 2.8 4.4C17.5 20.2 15 22 12 22z" />
+                        </svg>
+                    </span>
+                    <div class="perk-copy">
+                        <h3 class="perk-title">Pet friendly</h3>
+                        <p class="perk-text">Traé a tu mascota, acá también es bienvenida.</p>
+                    </div>
+                </div>
+
+                <div class="perk" data-aos="fade-up" data-aos-delay="200">
+                    <span class="perk-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9h11l-1 9.5a2 2 0 0 1-2 1.5H9a2 2 0 0 1-2-1.5L6 9z" />
+                            <path d="M17 11h1.5a2 2 0 0 1 0 4H17" />
+                            <path d="M9 9V6.5C9 5.1 10.1 4 11.5 4S14 5.1 14 6.5" />
+                        </svg>
+                    </span>
+                    <div class="perk-copy">
+                        <h3 class="perk-title">Coffee to go</h3>
+                        <p class="perk-text">Llevate tu café favorito para pasear por Tigre.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS / QUÉ OFRECEMOS -->
+        <section class="section" aria-labelledby="titulo-servicios">
+            <h2 id="titulo-servicios">Qué encontrás en Delos Coffee</h2>
+            <p class="section-lede">Más que un café: un espacio pensado para quedarse.</p>
+
+            <ul class="card-grid">
+                <li class="card service-card" data-aos="fade-up">
+                    <h3>Café de especialidad</h3>
+                    <p>Granos de origen único, tostado artesanal y baristas que preparan cada taza con técnica y cuidado.</p>
+                </li>
+                <li class="card service-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Pastelería del día</h3>
+                    <p>Dulces y salados horneados a diario: siempre hay algo nuevo para descubrir en la vitrina.</p>
+                </li>
+                <li class="card service-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>En frente al río</h3>
+                    <p>Mesas con luz natural y vista al río para disfrutar de un buen café y algo rico.</p>
+                </li>
+                <li class="card service-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Opciones para todos</h3>
+                    <p>Menú vegano y sin TACC, y todos los tipos de leche sin costo extra: entera, descremada, deslactosada o de almendras.</p>
+                </li>
+            </ul>
+
+            <a href="pages/menu.html" class="link-arrow">Ver todos los productos</a>
+        </section>
+
+        <!-- LO QUE DICEN DE NOSOTROS -->
+        <section class="section" aria-labelledby="titulo-opiniones">
+            <h2 id="titulo-opiniones">Lo que dicen de nosotros</h2>
+            <p class="section-lede section-lede--full">Somos la cafetería mejor valorada de Tigre en Tripadvisor: 5 de 5 burbujas y el puesto N.º 1 entre los lugares de café y té de la zona.</p>
+
+            <div class="testimonial-grid">
+                <blockquote class="testimonial" data-aos="fade-up">
+                    <p class="testimonial-author"><a href="https://www.tripadvisor.com.ar/Profile/lolid44" target="_blank" rel="noopener noreferrer">Loli De Luca</a></p>
+                    <p class="testimonial-highlight">“Una experiencia para repetir una y otra vez!”</p>
+                    <p class="testimonial-text">«Excelente para desayunar o almorzar. Las opciones para elegir era una mejor que la otra. Muy conveniente para llegar a tren en Tigre y dar un paseo caminando. Súper recomendable.»</p>
+
+                    <footer class="testimonial-footer">
+                        <a href="https://www.tripadvisor.com.ar/Restaurant_Review-g312762-d26193259-Reviews-Delos_Coffee_House-Tigre_Province_of_Buenos_Aires_Central_Argentina.html" target="_blank" rel="noopener noreferrer" class="testimonial-brand">
+                            <img src="assets/tripadvisor-logo-crema.png" alt="Tripadvisor" class="testimonial-brand-logo" />
+                        </a>
+
+                        <div class="testimonial-rating" aria-label="Calificación 5 de 5 en Tripadvisor">
+                            <span class="testimonial-score">5,0</span>
+                            <span class="testimonial-dots" aria-hidden="true">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </span>
+                        </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial" data-aos="fade-up" data-aos-delay="150">
+                    <p class="testimonial-author"><a href="https://www.tripadvisor.com.ar/Profile/scmaster" target="_blank" rel="noopener noreferrer">scmaster</a></p>
+                    <p class="testimonial-highlight"><a href="https://www.tripadvisor.com.ar/ShowUserReviews-g312762-d26193259-r907291757-Delos_Coffee_House-Tigre_Province_of_Buenos_Aires_Central_Argentina.html" target="_blank" rel="noopener noreferrer">“Muy grato lugar para un excelente café.”</a></p>
+                    <p class="testimonial-text">«Muy grato lugar para tomar un buen café y comer un pastel, medialunas o algo dulce. Recién inaugurado y atendido por su propio dueño. Nos atendieron de maravilla y el café estaba 10 puntos. Si van a pasear a Tigre, se los recomiendo.»</p>
+
+                    <footer class="testimonial-footer">
+                        <a href="https://www.tripadvisor.com.ar/Restaurant_Review-g312762-d26193259-Reviews-Delos_Coffee_House-Tigre_Province_of_Buenos_Aires_Central_Argentina.html" target="_blank" rel="noopener noreferrer" class="testimonial-brand">
+                            <img src="assets/tripadvisor-logo-crema.png" alt="Tripadvisor" class="testimonial-brand-logo" />
+                        </a>
+
+                        <div class="testimonial-rating" aria-label="Calificación 5 de 5 en Tripadvisor">
+                            <span class="testimonial-score">5,0</span>
+                            <span class="testimonial-dots" aria-hidden="true">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </span>
+                        </div>
+                    </footer>
+                </blockquote>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="back-to-top-wrap">
+        <a href="#top" class="back-to-top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 19V5" />
+                <path d="M5 12l7-7 7 7" />
+            </svg>
+            Volver arriba
+        </a>
+    </div>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="site-footer">
+        <p class="footer-copy">
+            <small>&copy; 2026 Delos Coffee House. Todos los derechos reservados.</small>
+        </p>
+
+        <nav class="social-nav" aria-label="Redes sociales">
+            <ul class="social-list">
+                <li><a class="social-link" href="https://www.instagram.com/delos.coffee/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a class="social-link" href="https://maps.app.goo.gl/wLYHs1oqDy5BCnqS9" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
+                <li><a class="social-link" href="https://www.tripadvisor.com.ar/Restaurant_Review-g312762-d26193259-Reviews-Delos_Coffee_House-Tigre_Province_of_Buenos_Aires_Central_Argentina.html" target="_blank" rel="noopener noreferrer">Tripadvisor</a></li>
+                <li><a class="social-link" href="tel:+541126667435">011 2666-7435</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="scripts/aos-init.js"></script>
+</body>
+</html>
