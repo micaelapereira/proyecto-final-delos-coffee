@@ -4,7 +4,7 @@ Sitio web de **Delos Coffee House**, cafetería de especialidad frente al río e
 
 ## Sitio publicado
 
-- **Repositorio:** _(se agrega al crear el repo)_
+- **Repositorio:** [https://github.com/micaelapereira/proyecto-final-delos-coffee](https://github.com/micaelapereira/proyecto-final-delos-coffee)
 - **Sitio en vivo (Vercel):** _(se agrega al desplegar)_
 
 ## Sobre el proyecto
