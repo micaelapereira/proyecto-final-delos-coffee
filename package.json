@@ -1,0 +1,12 @@
+{
+  "name": "delos-coffee-house",
+  "version": "1.0.0",
+  "description": "Sitio web de Delos Coffee House — arquitectura SCSS con partials y variables.",
+  "scripts": {
+    "build:scss": "sass scss/main.scss:styles/styles.css --no-source-map",
+    "watch:scss": "sass --watch scss/main.scss:styles/styles.css --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.102.0"
+  }
+}
