@@ -20,11 +20,11 @@ El sitio cuenta con 5 páginas: Inicio, Nosotros, Menú, Galería y Contacto. Fu
 - **Arquitectura SCSS avanzada**: partials (`utilities`, `base`, `layout`, `components`) importados únicamente desde `main.scss` con `@use`, usando variables, nesting, el operador `&`, mixins con parámetros, `@extend` y operadores aritméticos de Sass. El `styles/styles.css` final es exclusivamente el resultado de la compilación de `scss/main.scss`.
 - **Animaciones y transiciones**: librerías AOS y Animate.css, más transiciones y `@keyframes` propios.
 
-## Novedades del Entregable 9
+## Animaciones e interactividad
 
 - **Animaciones al hacer scroll con AOS**: cards de servicios y valores, secciones "about" (texto + imagen), testimonios, categorías del menú, galería y datos de contacto aparecen con un fade sutil a medida que se scrollea, en las 5 páginas.
 - **Entrada animada del hero con Animate.css**: el título entra desde la izquierda y el subtítulo desde la derecha, cruzándose hacia el centro; los botones aparecen después desde abajo.
-- **Animaciones propias con `@keyframes`**: el logo del hero flota suavemente en loop, y la flecha del botón "Volver arriba" rebota al pasar el mouse.
+- **Animaciones propias con `@keyframes`**: el logo del hero flota suavemente en loop, la flecha del botón "Volver arriba" rebota al pasar el mouse, y la imagen del hero tiene un efecto Ken Burns (zoom lento) al cargar la página.
 - **Interactividad con `transition`**: elevación y sombra en cards (mixin `hover-lift`) y zoom de imagen en la galería al hacer hover.
 - **SCSS avanzado**: mixin `hover-lift($distance, $shadow)` con parámetros, `@extend` de un placeholder `%card-base` compartido entre `.service-card` y `.value-card`, y una unidad de espaciado base (`$space-unit`) combinada con el operador `*` de Sass para calcular gaps y paddings de la sección de testimonios.
 - **Segunda reseña de Tripadvisor** en la sección "Lo que dicen de nosotros", con enlaces al perfil del autor y a la reseña puntual.
