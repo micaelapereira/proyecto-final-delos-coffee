@@ -255,6 +255,16 @@ blockquote {
     transform: translateY(-8px);
   }
 }
+@keyframes kenburns-bottom {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 84%;
+  }
+  100% {
+    transform: scale(1.25) translateY(15px);
+    transform-origin: bottom;
+  }
+}
 .hero-logo {
   height: 200px;
   padding-top: 0;
@@ -268,6 +278,7 @@ blockquote {
   width: 110%;
   height: 100%;
   object-fit: cover;
+  animation: kenburns-bottom 5s ease-out both;
 }
 @media (max-width: 640px) {
   .hero-img {
