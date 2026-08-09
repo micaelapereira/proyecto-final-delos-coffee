@@ -1,0 +1,26 @@
+// ============================================================
+// DELOS COFFEE HOUSE — PUNTO DE ENTRADA SCSS
+// Paleta: fondo crema, texto verde oscuro, gris verdoso secundario
+// y acento verde casi negro. Tipografía: Cormorant Garamond + Jost.
+// Compila a: styles/styles.css
+// ============================================================
+
+@use "utilities/variables" as *;
+@use "utilities/mixins" as *;
+
+@use "base/base";
+@use "base/tipografia";
+
+@use "layout/nav";
+@use "layout/header";
+@use "layout/footer";
+
+@use "components/buttons";
+@use "components/perks";
+@use "components/cards";
+@use "components/grids";
+@use "components/info";
+@use "components/menu";
+@use "components/gallery";
+@use "components/testimonial";
+@use "components/back-to-top";

@@ -1,0 +1,99 @@
+// ============================================================
+// NAV — Navbar (Bootstrap) reestilizado
+// ============================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.brand-logo {
+    height: 54px;
+    width: auto;
+}
+
+.custom-navbar {
+    background-color: $color-bg;
+    border-bottom: 1px solid $color-secondary;
+    padding: 1.5rem clamp(1.5rem, 5vw, 3rem);
+
+    .navbar-brand {
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .navbar-nav {
+        gap: clamp(1rem, 3vw, 2.25rem);
+    }
+
+    .nav-link {
+        @include label-text(0.72rem, 500, 0.16em);
+        color: $color-primary;
+        padding: 0.35rem 0;
+        border-bottom: 1px solid transparent;
+        transition: border-color $transition-base;
+
+        &:hover,
+        &:focus {
+            border-bottom-color: rgba($color-primary, 0.4);
+        }
+
+        &[aria-current="page"] {
+            border-bottom-color: $color-primary;
+        }
+    }
+
+    .navbar-toggler {
+        border-color: $color-secondary;
+        padding: 0.35rem 0.6rem;
+
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba($color-accent, 0.25);
+        }
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{url-color($color-accent)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+// --- Variante transparente, para navbars superpuestos sobre el hero ---
+.custom-navbar--overlay {
+    background-color: rgba($color-accent, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom-color: $color-bg;
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
+
+    .nav-link {
+        color: $color-bg;
+
+        &:hover,
+        &:focus {
+            border-bottom-color: rgba($color-bg, 0.5);
+        }
+
+        &[aria-current="page"] {
+            border-bottom-color: $color-bg;
+        }
+    }
+
+    .navbar-toggler {
+        border-color: rgba($color-bg, 0.6);
+
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba($color-bg, 0.25);
+        }
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{url-color($color-bg)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing {
+        background-color: rgba($color-accent, 0.92);
+        border-radius: $radius-card;
+        padding: 1rem 1.25rem;
+        margin-top: 0.5rem;
+    }
+}

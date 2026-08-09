@@ -1,0 +1,32 @@
+// ============================================================
+// VARIABLES DE DISEÑO — Delos Coffee House
+// ============================================================
+
+// Paleta de colores
+$color-bg: #FCF7E6;
+$color-primary: #57615E;
+$color-secondary: #B4B4AF;
+$color-accent: #2B2C27;
+$color-shadow: #000000;
+
+// Tipografía
+$font-heading: 'Cormorant Garamond', Georgia, serif;
+$font-body: 'Jost', Arial, sans-serif;
+
+// Layout
+$container-width: 1120px;
+$radius-pill: 999px;
+$radius-card: 0.75rem;
+$transition-base: 0.25s ease;
+
+// Unidad base de espaciado: el resto de los espaciados de esta sección
+// se calculan multiplicándola (operador `*` de Sass), en vez de escribir
+// cada valor suelto. Ej: $space-unit * 3 = 1.5rem.
+$space-unit: 0.5rem;
+
+// Breakpoints (mobile-first)
+$bp-mobile-max: 640px;
+$bp-tablet: 700px;
+$bp-desktop: 1024px;
+$bp-masonry-2col: 640px;
+$bp-masonry-3col: 1000px;

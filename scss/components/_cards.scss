@@ -1,0 +1,71 @@
+// ============================================================
+// CARDS — Tarjetas de servicios y valores
+// ============================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.card-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    margin-top: 2.5rem;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+%card-base {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.75rem;
+    background-color: $color-accent;
+    border-radius: $radius-card;
+    color: $color-bg;
+    @include hover-lift;
+
+    h3 {
+        color: $color-bg;
+        margin: 0;
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.service-card {
+    @extend %card-base;
+    min-height: 300px;
+    border: none;
+}
+
+.value-card {
+    @extend %card-base;
+    min-height: 360px;
+}

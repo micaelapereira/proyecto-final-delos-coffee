@@ -1,0 +1,56 @@
+// ============================================================
+// BACK TO TOP — Enlace centrado, siempre visible, justo antes del footer
+// ============================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.back-to-top-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem clamp(1.5rem, 5vw, 3rem);
+    background-color: $color-bg;
+}
+
+@keyframes arrow-bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+.back-to-top {
+    @include flex-center(inline-flex);
+    gap: 0.5rem;
+    padding: 0.7em 1.75em;
+    border: 1px solid rgba($color-primary, 0.35);
+    border-radius: $radius-pill;
+    color: $color-primary;
+    @include label-text(0.72rem, 500, 0.14em);
+    transition: background-color $transition-base, color $transition-base, border-color $transition-base;
+
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    &:hover,
+    &:focus-visible {
+        background-color: $color-primary;
+        color: $color-bg;
+        border-color: $color-primary;
+
+        svg {
+            animation: arrow-bounce 0.6s ease-in-out infinite;
+        }
+    }
+
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba($color-primary, 0.2);
+    }
+}

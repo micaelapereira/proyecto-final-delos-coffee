@@ -1,0 +1,53 @@
+// ============================================================
+// MENU — Carta / categorías del menú
+// ============================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    margin-top: 2.5rem;
+
+    .menu-category {
+        margin-bottom: 0;
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--3 {
+        @include desktop {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+.menu-category {
+    margin-bottom: 2.25rem;
+}
+
+.menu-category-title {
+    @include label-text(0.78rem, 600, 0.2em);
+    border-bottom: 1px solid $color-secondary;
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.menu-list {
+    list-style: none;
+
+    li {
+        font-family: $font-heading, serif;
+        font-size: 1.2rem;
+        padding: 0.6rem 0;
+        border-bottom: 1px dashed $color-secondary;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

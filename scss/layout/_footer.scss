@@ -1,0 +1,44 @@
+// ============================================================
+// FOOTER
+// ============================================================
+
+@use "../utilities/variables" as *;
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background-color: $color-primary;
+    color: $color-bg;
+    padding: 3rem clamp(1.5rem, 5vw, 3rem) 2.5rem;
+
+    p {
+        color: $color-bg;
+    }
+}
+
+.footer-copy {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.social-link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-bg;
+    border-bottom: 1px solid transparent;
+    transition: border-color $transition-base;
+
+    &:hover {
+        border-color: $color-bg;
+    }
+}

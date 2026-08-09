@@ -1,0 +1,44 @@
+// ============================================================
+// GRIDS DE CONTENIDO — Sección "Nosotros" (grid-template-areas)
+// ============================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.about-grid {
+    display: grid;
+    grid-template-areas:
+        "texto"
+        "imagen";
+    gap: 2.5rem;
+    align-items: end;
+
+    @include desktop {
+        grid-template-areas: "texto imagen";
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+.about-texto {
+    grid-area: texto;
+}
+
+.about-imagen {
+    grid-area: imagen;
+    margin: 0;
+    margin-top: 2.5rem;
+
+    .figure-img {
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        height: auto;
+        max-height: none;
+    }
+
+    .gallery-carousel {
+        margin: 0;
+        max-width: none;
+    }
+}

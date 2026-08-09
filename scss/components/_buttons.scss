@@ -1,0 +1,67 @@
+// ============================================================
+// BOTONES Y LINKS DE ACCIÓN
+// ============================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.btn {
+    @include flex-center(inline-flex);
+    padding: 0.9em 2em;
+    border-radius: $radius-pill;
+    @include label-text(0.72rem, 500, 0.14em);
+    transition: background-color $transition-base, color $transition-base, border-color $transition-base;
+
+    &:focus,
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba($color-bg, 0.35);
+    }
+}
+
+.btn-primary {
+    background-color: $color-bg;
+    color: $color-primary;
+    border: 1px solid $color-bg;
+
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:active {
+        background-color: transparent !important;
+        color: $color-bg !important;
+        border-color: $color-bg !important;
+    }
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: $color-bg;
+    border: 1px solid rgba($color-bg, 0.6);
+
+    &:hover {
+        background-color: rgba($color-bg, 0.15);
+    }
+}
+
+.link-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $color-primary;
+    border-bottom: 1px solid $color-primary;
+    padding-bottom: 0.15em;
+    transition: gap $transition-base;
+
+    &::after {
+        content: "→";
+    }
+
+    &:hover {
+        gap: 0.65em;
+    }
+}

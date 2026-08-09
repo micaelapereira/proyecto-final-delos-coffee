@@ -1,0 +1,32 @@
+// ============================================================
+// INFO — Bloque de información de contacto
+// ============================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-row {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $color-secondary;
+
+    &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+.info-label {
+    @include label-text(0.72rem, 500, 0.18em);
+    color: $color-primary;
+    margin-bottom: 0.5rem;
+}
+
+.info-value {
+    font-size: 1.05rem;
+}

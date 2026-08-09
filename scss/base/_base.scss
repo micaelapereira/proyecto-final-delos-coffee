@@ -1,0 +1,88 @@
+// ============================================================
+// BASE — Reset y estructura global de página
+// ============================================================
+
+@use "../utilities/variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: $color-bg;
+    color: $color-primary;
+    font-family: $font-body, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+// --- Contenedor / secciones ---
+.section {
+    padding: 5rem 1.5rem;
+    max-width: $container-width;
+    margin: 0 auto;
+
+    &--pb-sm {
+        padding-bottom: 2.5rem;
+    }
+
+    &--pt-sm {
+        padding-top: 2.5rem;
+    }
+
+    &--accent {
+        background-color: $color-accent;
+        box-shadow: 0 0 0 100vmax $color-accent;
+        clip-path: inset(0 -100vmax);
+        color: $color-bg;
+
+        h1,
+        h2,
+        h3 {
+            color: $color-bg;
+        }
+
+        .menu-category-title {
+            color: $color-bg;
+            border-bottom-color: $color-secondary;
+        }
+
+        .link-arrow {
+            color: $color-bg;
+            border-bottom-color: $color-bg;
+        }
+    }
+}
+
+.section-lede {
+    max-width: 60ch;
+    font-size: 1.05rem;
+
+    &--full {
+        max-width: none;
+    }
+}
